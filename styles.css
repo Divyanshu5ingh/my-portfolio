@@ -233,3 +233,30 @@ body {
   color: var(--text-secondary);
   font-size: 0.875rem;
 }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+  .container {
+    width: min(1024px, 100% - 2.5rem); /* Tighter padding on mobile */
+  }
+
+  .site-nav {
+    gap: 0.75rem; /* Reduced gap */
+  }
+
+  .site-nav a {
+    font-size: 0.8rem; /* Slightly smaller font */
+  }
+
+  .brand-title {
+    font-size: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
